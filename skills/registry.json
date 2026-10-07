@@ -1,0 +1,21 @@
+{
+  "searcher": [
+    "literature_search.md"
+  ],
+  "extractor": [
+    "evidence_grading.md",
+    "clinical_outcome_extraction.md"
+  ],
+  "reviewer": [
+    "citation_validation.md",
+    "semantic_validation.md"
+  ],
+  "comparator": [
+    "comparison_rules.md",
+    "evidence_grading.md"
+  ],
+  "evaluator": [
+    "promisingness_criteria.md",
+    "evidence_grading.md"
+  ]
+}

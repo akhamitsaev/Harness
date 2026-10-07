@@ -1,0 +1,9 @@
+{
+  "disease": "Leber Hereditary Optic Neuropathy (LHON)",
+  "standard_of_care": "Supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins (e.g., tobacco, alcohol) as the most widely accepted comparator for LHON management",
+  "pubmed_mito_query": "((Leber Hereditary Optic Neuropathy[Title/Abstract] OR LHON[Title/Abstract]) AND (idebenone[Title/Abstract] OR gene therapy[Title/Abstract] OR elamipretide[Title/Abstract] OR mitochondrial-targeted therapy[Title/Abstract] OR EPI-743[Title/Abstract] OR GS010[Title/Abstract])) AND (2019/01/01:2024/12/31[Date - Publication])",
+  "pubmed_standard_query": "((Leber Hereditary Optic Neuropathy[Title/Abstract] OR LHON[Title/Abstract]) AND (supportive care[Title/Abstract] OR visual rehabilitation[Title/Abstract] OR low-vision aids[Title/Abstract] OR standard of care[Title/Abstract] OR tobacco avoidance[Title/Abstract] OR alcohol avoidance[Title/Abstract])) AND (2019/01/01:2024/12/31[Date - Publication])",
+  "clinical_trials_condition": "Leber Hereditary Optic Neuropathy",
+  "clinical_trials_mito_interventions": "idebenone OR gene therapy OR elamipretide OR EPI-743 OR GS010",
+  "clinical_trials_standard_interventions": "supportive care OR visual rehabilitation OR low-vision aids OR standard of care"
+}

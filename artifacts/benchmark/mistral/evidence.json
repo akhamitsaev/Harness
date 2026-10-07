@@ -1,0 +1,20 @@
+[
+  {
+    "intervention": "idebenone",
+    "target": null,
+    "disease": "Leber hereditary optic neuropathy (LHON)",
+    "study_type": "clinical_trial",
+    "evidence_level": "low",
+    "phase": null,
+    "n": null,
+    "outcome": "visual outcomes (effect varies by LHON stage and mutation; early initiation and ≥24 months treatment suggested)",
+    "effect": "variable and context-dependent; favorable for m.11778G>A and chronic eyes with m.14484T>C, caution in subacute/dynamic eyes with m.3460G>A due to possible worsening",
+    "effect_class": "unclear",
+    "source_quote": "Evidence from three clinical studies (RHODOS, RHODOS-OFU, and LEROS) suggest that idebenone should be started early and continued for at least 24 months. Treatment effect varies according to the stage of LHON and the underlying mutation. Favourable outcomes are associated with the m.11778G>A mutation and chronic eyes with the m.14484T>C mutation. Caution should be taken in subacute/dynamic eyes with the m.3460G>A mutation, due to possible clinical worsening with idebenone.",
+    "source_type": "pubmed",
+    "source_id": "39704163",
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/39704163/",
+    "doi": "10.1097/WCO.0000000000001343",
+    "evidence_track": "mitochondrial"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "comparisons": [
+    {
+      "mitochondrial_intervention": "Idebenone",
+      "standard_comparator": "Supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins (e.g., tobacco, alcohol) as the most widely accepted comparator for LHON management",
+      "relative_evidence": "insufficient",
+      "summary": "Reviewer-passed evidence includes a systematic review (source 39419122) reporting clinically relevant recovery from nadir (CRR) of 31% [24%; 40%] in idebenone-treated patients versus 17% [7%; 30%] in untreated patients. The comparator is untreated natural history, not the configured standard of care (supportive care, visual rehabilitation, low-vision aids, toxin avoidance). No reviewer-passed evidence on outcomes with supportive care alone was supplied. Therefore the relative evidence for idebenone versus standard of care cannot be determined and is classified as insufficient.",
+      "supporting_source_ids": [
+        "39419122"
+      ],
+      "limitations": [
+        "No reviewer-passed evidence on supportive care outcomes was provided.",
+        "The available comparator is untreated natural history, not the configured standard of care.",
+        "No head-to-head randomized comparison of idebenone versus supportive care is available in the supplied evidence."
+      ]
+    },
+    {
+      "mitochondrial_intervention": "Lenadogene nolparvovec (gene therapy)",
+      "standard_comparator": "Supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins (e.g., tobacco, alcohol) as the most widely accepted comparator for LHON management",
+      "relative_evidence": "insufficient",
+      "summary": "Reviewer-passed evidence includes a systematic review (39419122) reporting CRR of 59% [54%; 64%] with lenadogene nolparvovec versus 17% [7%; 30%] untreated, and another source (39704163) reporting sustained bilateral visual improvement compared with published natural history. These comparisons are against untreated/published natural history, not the configured standard of care. No reviewer-passed evidence on supportive care outcomes was supplied, so relative evidence versus standard of care is insufficient.",
+      "supporting_source_ids": [
+        "39419122",
+        "39704163"
+      ],
+      "limitations": [
+        "No reviewer-passed evidence on supportive care outcomes.",
+        "Comparator in available studies is untreated/published natural history, not supportive care.",
+        "No head-to-head trial of lenadogene nolparvovec versus supportive care in the supplied evidence."
+      ]
+    },
+    {
+      "mitochondrial_intervention": "NR082 (rAAV2-ND4) gene therapy",
+      "standard_comparator": "Supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins (e.g., tobacco, alcohol) as the most widely accepted comparator for LHON management",
+      "relative_evidence": "insufficient",
+      "summary": "Reviewer-passed evidence includes two registered clinical trials of NR082 (NCT05293626, NCT07406854) but no reported efficacy outcomes or effects. There is no reviewer-passed evidence on supportive care outcomes. Therefore relative evidence versus standard of care is insufficient.",
+      "supporting_source_ids": [
+        "NCT05293626",
+        "NCT07406854"
+      ],
+      "limitations": [
+        "No efficacy results reported in the supplied evidence.",
+        "No supportive care comparator evidence supplied.",
+        "One trial is Phase 3 but effect is null/unclear."
+      ]
+    },
+    {
+      "mitochondrial_intervention": "Preclinical mitochondrial-targeted approaches (mNP-Mito, AAV2 mitochondrial transfer)",
+      "standard_comparator": "Supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins (e.g., tobacco, alcohol) as the most widely accepted comparator for LHON management",
+      "relative_evidence": "insufficient",
+      "summary": "Reviewer-passed preclinical evidence includes mNP-Mito (39807326) and AAV2 mitochondrial transfer (39332508) in animal models, but these are not clinical interventions and no supportive care comparator evidence is supplied. Relative evidence versus standard of care is insufficient.",
+      "supporting_source_ids": [
+        "39807326",
+        "39332508"
+      ],
+      "limitations": [
+        "Preclinical only; no human efficacy data.",
+        "No supportive care comparator evidence.",
+        "No direct or indirect comparison with standard of care possible."
+      ]
+    }
+  ]
+}

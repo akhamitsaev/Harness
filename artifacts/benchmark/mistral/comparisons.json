@@ -1,0 +1,18 @@
+{
+  "comparisons": [
+    {
+      "mitochondrial_intervention": "idebenone",
+      "standard_comparator": "supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins",
+      "relative_evidence": "weaker",
+      "summary": "Evidence for idebenone in LHON consists of a single clinical trial with low evidence level, showing variable and context-dependent visual outcomes depending on disease stage and mutation type. The standard comparator (supportive care) is widely accepted but lacks high-quality interventional evidence; however, its use is based on clinical consensus rather than controlled trials.",
+      "supporting_source_ids": [
+        "39704163"
+      ],
+      "limitations": [
+        "No head-to-head comparison with supportive care; idebenone evidence is limited to a single clinical trial with low evidence level and unclear effect magnitude",
+        "Outcomes are highly dependent on LHON stage and mutation type, limiting generalizability",
+        "Standard comparator lacks interventional evidence but is based on clinical consensus"
+      ]
+    }
+  ]
+}

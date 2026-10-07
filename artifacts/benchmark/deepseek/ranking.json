@@ -1,0 +1,75 @@
+[
+  {
+    "intervention": "Lenadogene nolparvovec (gene therapy)",
+    "display_name": "Lenadogene nolparvovec",
+    "category": "mitochondrial",
+    "score": 74,
+    "evidence_level": "moderate",
+    "confidence": "medium",
+    "rationale": "A moderate-quality systematic review (39419122) reports a strong positive significant effect (CRR 59% vs 17% untreated), supported by a low-quality observational/other source (39704163) showing sustained bilateral visual improvement compared with published natural history. The clinical program is late-phase. However, the primary comparator in the available evidence is untreated/published natural history, not the configured standard of care, and no supportive-care outcome data were supplied. Therefore relative evidence versus standard of care is insufficient, which limits the score and confidence. The main limiting factor is the lack of head-to-head comparison with supportive care.",
+    "main_limitations": [
+      "No head-to-head trial versus supportive care/standard of care.",
+      "Comparator is untreated/published natural history, not the configured standard of care.",
+      "Some evidence comes from low-quality or unclear sources."
+    ],
+    "supporting_source_ids": [
+      "39419122",
+      "39704163"
+    ]
+  },
+  {
+    "intervention": "Idebenone",
+    "display_name": "Idebenone (antioxidant)",
+    "category": "mitochondrial",
+    "score": 70,
+    "evidence_level": "moderate",
+    "confidence": "medium",
+    "rationale": "Moderate-quality systematic review evidence (39419122) reports a positive significant effect of idebenone on clinically relevant recovery from nadir (31% vs 17% untreated), and another systematic review (39766826) includes antioxidants such as idebenone but reports unclear effect. Clinical maturity is relatively advanced (Phase 3 program). The main factor limiting the score is the absence of any head-to-head or supportive-care comparator evidence; relative evidence versus the configured standard of care is insufficient, so no advantage over standard management can be claimed. Cross-study comparison against untreated natural history does not substitute for a standard-of-care comparison.",
+    "main_limitations": [
+      "No head-to-head comparison with supportive care/standard of care.",
+      "Comparator evidence is untreated natural history, not the configured standard of care.",
+      "One systematic review reports unclear effect, creating some inconsistency."
+    ],
+    "supporting_source_ids": [
+      "39419122",
+      "39766826"
+    ]
+  },
+  {
+    "intervention": "NR082 (rAAV2-ND4) gene therapy",
+    "display_name": "NR082 (rAAV2-ND4)",
+    "category": "mitochondrial",
+    "score": 30,
+    "evidence_level": "unclear",
+    "confidence": "low",
+    "rationale": "Evidence consists of two registered trials (NCT05293626 Phase 1/2, n=12; NCT07406854 Phase 3 RCT, n=95) with no reported efficacy outcomes or effect. Although a Phase 3 RCT design is potentially high-quality, no published results are available, and the smaller early-phase trial reports no effect. Per rubric, trial registration alone does not justify a high score. Clinical maturity cannot be confirmed without results, observed effect is unclear, and relative evidence versus standard of care is insufficient. The main limiting factor is the complete absence of published efficacy data.",
+    "main_limitations": [
+      "No efficacy results reported in the supplied evidence.",
+      "No supportive care comparator data.",
+      "Phase 3 status does not compensate for missing results."
+    ],
+    "supporting_source_ids": [
+      "NCT05293626",
+      "NCT07406854"
+    ]
+  },
+  {
+    "intervention": "Preclinical mitochondrial-targeted approaches (mNP-Mito, AAV2 mitochondrial transfer)",
+    "display_name": "Preclinical mitochondrial-targeted",
+    "category": "mitochondrial",
+    "score": 15,
+    "evidence_level": "preclinical",
+    "confidence": "low",
+    "rationale": "Both sources are preclinical animal-model studies. mNP-Mito increased complex I activity and promoted ATP restoration but no p-value or statistical significance was reported (effect_class unclear). AAV2 mitochondrial transfer accelerated mitochondrial transfer in a rotenone model but is proposed as an explanation rather than a demonstrated therapy. Per rubric, preclinical-only directions should not exceed 60, and here observed effect is unclear and no human data exist. The main limiting factor is the absence of any clinical evidence and lack of statistical significance.",
+    "main_limitations": [
+      "Preclinical only; no human efficacy data.",
+      "No statistical significance reported for mNP-Mito.",
+      "No comparator evidence versus standard of care.",
+      "Mechanistic/exploratory rather than therapeutic demonstration."
+    ],
+    "supporting_source_ids": [
+      "39807326",
+      "39332508"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "objective": "Сравнить митохондриально-таргетные терапии (idebenone, gene therapy, elamipretide) с традиционной поддерживающей терапией/стандартом ведения LHON за последние 3-5 лет и оценить перспективность направлений.",
+  "diseases": [
+    "LHON (Leber Hereditary Optic Neuropathy)"
+  ],
+  "time_window_years": 5,
+  "steps": [
+    "search",
+    "extraction",
+    "comparison",
+    "evaluation",
+    "visualization",
+    "report"
+  ],
+  "delegations": [
+    "literature_searcher",
+    "extractor",
+    "comparator",
+    "evaluator",
+    "reviewer"
+  ]
+}

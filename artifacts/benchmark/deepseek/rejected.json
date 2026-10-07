@@ -1,0 +1,69 @@
+[
+  {
+    "source_id": "39286546",
+    "title": "Diagnostic dilemma: Leber's hereditary optic neuropathy in a 70-year-Old woman.",
+    "issues": [
+      "Study type is misclassified: the source is a single case report (n=1), not a case_series.",
+      "The target 'mitochondrial position 11778' is a pathogenic variant/diagnostic finding, not an established target of idebenone; the source does not support this as an intervention target.",
+      "The outcome quote is present and the numbers 20/40 and 20/30 match, but the source does not establish that idebenone caused the improvement; effect_class 'unclear' is appropriate, but the record must not imply causality.",
+      "PMID/DOI/source_url cannot be independently verified from the supplied source text; they should be validated only from provenance."
+    ]
+  },
+  {
+    "source_id": "39525159",
+    "title": "Leber Hereditary Optic Neuropathy With Significant Visual Recovery: An MT-ND6 Mutation in a Malay Patient.",
+    "issues": [
+      "study_type is 'case_series' but the source reports a single patient ('We report a rare case of an 18-year-old Malay male'); a single case cannot constitute a case series. This should be classified as a case report.",
+      "n is null although the design is a single-patient case report; the sample size is determinable as 1 from the source text ('a rare case of an 18-year-old Malay male'), so leaving it null under-describes the evidence base. This is a minor issue and must not be inflated to any larger n.",
+      "The outcome/effect combination is supported by the verbatim quote ('demonstrated remarkable spontaneous visual recovery over a three-year follow-up period'), and the three-year follow-up duration matches the source. However, this is a single-patient natural-history observation with no comparator and no intervention; the extractor correctly avoided claiming therapeutic efficacy, and effect_class 'unclear' is acceptable since the recorded event is spontaneous recovery, not a treatment effect.",
+      "source_id (39525159) and doi (10.7759/cureus.71210) are not verifiable from the supplied source text alone; they are accepted only because the deterministic provenance check returned no issues.",
+      "Intervention is null, which is consistent with effect_class 'unclear'; no therapeutic benefit should be inferred from this record."
+    ]
+  },
+  {
+    "source_id": "39365263",
+    "title": "Ganglion Cell Complex Thickness and Visual Function in Chronic Leber Hereditary Optic Neuropathy.",
+    "issues": [
+      "Sample size n=26 was not found in source text",
+      "Deterministic guardrail flag for n=26 is a false positive: the source states 'Twenty-six chronic LHON subjects', so the sample size is supported despite the numeric token '26' not appearing literally.",
+      "Note for transparency: the extracted effect is a correlation/association, not a therapeutic efficacy claim; effect_class 'positive_significant' is acceptable here because it describes the significant positive correlation reported for the stated outcome, and the record correctly does not claim treatment benefit.",
+      "The abstract also reports automated segmentation overestimating GCC thickness by 16-30 µm (P<0.001) and a treated-vs-untreated BCVA difference (P=0.017); these are secondary findings not required by the selected outcome, so their omission does not invalidate the record."
+    ]
+  },
+  {
+    "source_id": "38967874",
+    "title": "Assessment of objective visual function following idebenone administration in patients with leber hereditary optic neuropathy.",
+    "issues": [
+      "Sample size n=4 was not found in source text",
+      "Deterministic guardrail flagged 'n=4 not found in source'; this is a false positive — the source states 'A descriptive study involving four confirmed LHON patients', where the sample size is spelled out as a word rather than a digit. The extracted n=4 is therefore supported.",
+      "Minor source-internal ambiguity: the results sentence enumerates more patient-level descriptions than n=4 can accommodate ('one patient...', 'two patients...', 'one improved on subjective tests, and another worsened slightly', 'another patient improved in visual field tests...'). The extracted effect faithfully reproduces the source wording and does not add patients or outcomes, so this is a source-text ambiguity rather than an extraction overreach.",
+      "The extracted effect_class 'mixed' is consistent with the descriptive, uncontrolled case-series design; the record does not claim efficacy, and the source's conclusion (fMRI 'may offer a valuable objective measure') is framed as a hypothesis requiring further research, so no unsupported therapeutic benefit is asserted.",
+      "Intervention semantics are sound: oral idebenone 900 mg/day for 24 weeks is a genuine intervention, not a diagnostic test or measurement, and the outcome ('pre- and post-idebenone changes in visual acuity, visual fields, BOLD fMRI responses, and self-reported symptoms') matches the stated endpoints.",
+      "PMID 38967874, DOI 10.1007/s10384-024-01077-z and the PubMed URL were accepted from provenance and were not independently re-verified against an external registry in this review; they are reproduced exactly as supplied and no identifiers were invented.",
+      "study_type 'case_series' and evidence_level 'very_low' are defensible for a small descriptive study of four patients without a control group; phase null is appropriate for a non-trial descriptive study."
+    ]
+  },
+  {
+    "source_id": "33647261",
+    "title": "Brain functional MRI responses to blue light stimulation in Leber's hereditary optic neuropathy.",
+    "issues": [
+      "Sample size n=24 was not found in source text",
+      "Deterministic guardrail flagged n=24 as absent from source text, but the source states 'Twelve patients and twelve matched healthy controls' — 24 is a direct sum of the two stated groups, so it is supported (though presented as a derived total rather than a verbatim number).",
+      "Target is listed as 'mRGCs and associated visual/cognitive brain networks'; mRGC function was not directly measured (no mRGC-specific assay), only inferred from fMRI in a condition with relative mRGC sparing. This is an acceptable interpretive framing but is one step removed from the measured outcome.",
+      "'intervention' is correctly annotated as an experimental stimulus/probe (blue 480 nm vs red 620 nm light during fMRI), not a therapeutic intervention; consistent with effect_class = 'unclear' and no efficacy claim.",
+      "The extracted effect accurately paraphrases the quote and does not overstate direction, significance, or causality (no therapeutic benefit claimed).",
+      "PMID/DOI were not independently verifiable from the supplied source text; treated as trusted only if they came from Python provenance."
+    ]
+  },
+  {
+    "source_id": "NCT06891443",
+    "title": "Study to Evaluate Sepofarsen in Subjects With Leber Congenital Amaurosis (LCA) Type 10 (HYPERION)",
+    "issues": [
+      "source_quote does not mention the extracted primary outcome (BCVA/FrACT change between treatment and placebo eyes); it only supports disease and target/mutation, so it does not directly support the outcome field.",
+      "evidence_track 'mitochondrial' is inconsistent with LCA type 10 caused by CEP290 mutation, which is a retinal ciliopathy rather than a mitochondrial disease.",
+      "evidence_level 'moderate' is not defensible for a recruiting ClinicalTrials.gov registration with no results posted; no efficacy evidence is available yet.",
+      "n=32 is listed in the source as ESTIMATED enrollment, not actual enrollment; the record should indicate this is estimated, not observed.",
+      "effect=null and effect_class='unclear' are appropriate because the source is a trial registration without results; this part is supported."
+    ]
+  }
+]

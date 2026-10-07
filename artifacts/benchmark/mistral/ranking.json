@@ -1,0 +1,33 @@
+[
+  {
+    "intervention": "idebenone",
+    "display_name": "idebenone for LHON",
+    "category": "mitochondrial",
+    "score": 40,
+    "evidence_level": "low",
+    "confidence": "low",
+    "rationale": "The only reviewer-passed evidence for idebenone in LHON is a single clinical trial with low evidence level, showing variable and context-dependent outcomes. This yields a score of 40/100: 35% for low-quality clinical trial evidence (12/35), 25% for early clinical maturity (6/25), 25% for unclear/neutral observed effect (6/25), and 15% for being compared against a widely accepted but consensus-based standard (4/15). The main limitation is the lack of robust, reproducible evidence and absence of direct comparator data.",
+    "main_limitations": [
+      "Single clinical trial with low evidence level; effect is variable and context-dependent (mutation type and disease stage)",
+      "No head-to-head comparison against supportive care; comparator is based on clinical consensus rather than interventional evidence",
+      "Unclear magnitude of benefit relative to standard of care"
+    ],
+    "supporting_source_ids": [
+      "39704163"
+    ]
+  },
+  {
+    "intervention": "supportive care including visual rehabilitation, low-vision aids, and avoidance of known optic nerve toxins",
+    "display_name": "supportive care for LHON",
+    "category": "standard",
+    "score": 30,
+    "evidence_level": "unclear",
+    "confidence": "low",
+    "rationale": "Supportive care is the widely accepted comparator for LHON management but lacks interventional evidence; its use is grounded in clinical consensus rather than trials. This yields a score of 30/100: 35% for unclear evidence level (0/35), 25% for clinical maturity based on consensus practice (10/25), 25% for unclear observed effect (0/25), and 15% for being the accepted standard comparator (10/15). The main limitation is the absence of interventional evidence and inability to quantify benefit relative to other approaches.",
+    "main_limitations": [
+      "No interventional trials; standard is based on clinical consensus rather than controlled evidence",
+      "Lack of high-quality comparator data to quantify benefit relative to natural history or other interventions"
+    ],
+    "supporting_source_ids": []
+  }
+]

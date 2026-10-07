@@ -1,0 +1,145 @@
+[
+  {
+    "source_id": "39419122",
+    "title": "Meta-analysis of treatment outcomes for patients with m.11778G>A MT-ND4 Leber hereditary optic neuropathy.",
+    "issues": [
+      "source_quote is missing or not found verbatim in source text",
+      "The extracted record incorrectly classifies the study type as 'systematic_review' when the source explicitly states it is a meta-analysis combining systematic review data (for natural history and idebenone) with phase 3 study data (for lenadogene nolparvovec).",
+      "The effect_class is set to 'unclear' despite the source reporting a specific CRR effect (31% [24%; 40%]) for idebenone-treated patients, which suggests a measurable outcome rather than an unclear effect.",
+      "The intervention is listed as 'idebenone or lenadogene nolparvovec', but the source distinguishes between these treatments in separate analyses (systematic review for idebenone vs. phase 3 data for lenadogene nolparvovec), which is not reflected in the extraction.",
+      "The source_quote is not verbatim as presented in the extraction. The extraction omits the preceding context ('CRR from nadir [95 % CI] at eye level was ...') and does not include the full sentence structure, which is required for verbatim validation.",
+      "The study_type 'systematic_review' is incompatible with the inclusion of phase 3 study data for lenadogene nolparvovec, which is not a systematic review but a meta-analysis combining different study designs.",
+      "The effect_class 'unclear' is not justified by the source, as the source reports a clear numerical effect (31% [24%; 40%]) for idebenone-treated patients."
+    ]
+  },
+  {
+    "source_id": "39807326",
+    "title": "Nanoengineered mitochondria enable ocular mitochondrial disease therapy via the replacement of dysfunctional mitochondria.",
+    "issues": [
+      "The extracted outcome ('Restoration of mitochondrial function and mitigation of ocular mitochondrial disease-related phenotypes') is not directly supported by the source quote, which describes mechanistic effects (increase in complex I activity, restoration of ATP generation) rather than clinical or phenotypic outcomes. The source does not provide evidence of therapeutic benefit or clinical efficacy, only preclinical mechanistic findings.",
+      "The effect_class 'positive_significant' is not justified by the source, as the study is preclinical and does not demonstrate statistical significance or therapeutic efficacy. The observed differences in complex I activity (76.5% vs 29.5%) are descriptive and not validated as statistically significant or clinically meaningful.",
+      "The intervention is described as a therapeutic tool ('for treating LHON'), but the source only demonstrates mechanistic feasibility in a mouse model. The intervention semantics are overstated as a therapeutic benefit rather than a preclinical intervention with mechanistic effects.",
+      "The study_type is correctly identified as 'preclinical', but the evidence_level and effect_class should reflect the preclinical, mechanistic nature of the findings rather than implying therapeutic efficacy."
+    ]
+  },
+  {
+    "source_id": "39286546",
+    "title": "Diagnostic dilemma: Leber's hereditary optic neuropathy in a 70-year-Old woman.",
+    "issues": [
+      "Extracted study_type 'case_series' is not supported by the source text, which describes a single case report.",
+      "Extracted outcome includes 'improvement to 20/40 and 20/30' as a therapeutic benefit, but the source only documents observed vision at follow-up without attributing improvement to any intervention or mechanism.",
+      "Extracted effect_class 'unclear' is inconsistent with the source, which does not evaluate or classify any effect; it merely reports observed outcomes.",
+      "Extracted evidence_level 'very_low' is not justified by the source, which is a case report (not a case series) and does not provide comparative or evaluative context.",
+      "The source does not support the claim that idebenone treatment led to the observed vision improvement; the text states she 'began treatment with idebenone' after the improvement was noted, without causal attribution.",
+      "The source does not provide sufficient evidence to classify the outcome as a therapeutic effect or to infer efficacy.",
+      "The source does not support the extraction of 'n: 1' as a case series; it is a single case report."
+    ]
+  },
+  {
+    "source_id": "39766826",
+    "title": "Insights on the Genetic and Phenotypic Complexities of Optic Neuropathies.",
+    "issues": [
+      "The extracted record incorrectly classifies the study type as 'other' when the source explicitly states it is a 'narrative review study'.",
+      "The extracted record lists 'intervention' as null, but the source discusses 'novel therapeutic options' and 'molecular therapies' as part of the review's scope, which should be reflected in the intervention field.",
+      "The extracted record assigns 'effect_class' as 'unclear' and 'effect' as null, but the source explicitly states that 'innovative therapeutics... exhibit promise for alleviating optic nerve damage and safeguarding vision', which implies a therapeutic benefit that should be reflected in the effect_class.",
+      "The extracted record does not capture the therapeutic implications of the discussed mechanisms (e.g., gene therapy, RNA-based treatments, antioxidants like idebenone) despite the source mentioning them as part of the conclusions.",
+      "The 'evidence_level' is set to 'very_low', but the source is a narrative review, which should typically be classified as 'low' or 'very_low' only if justified by the study design; however, the current classification lacks justification in the extraction."
+    ]
+  },
+  {
+    "source_id": "39462921",
+    "title": "Recent advances in neuro-ophthalmology.",
+    "issues": [
+      "source_quote is missing or not found verbatim in source text",
+      "No outcome, effect, or therapeutic benefit is supported by the source text; the source is a review article describing advancements without reporting results or effects",
+      "Intervention list includes diagnostic tools (OCT, AI, serological biomarkers) and interventions (gene therapy, Tocilizumab, Teprotumumab), but the source does not report therapeutic effects or outcomes for these interventions",
+      "effect_class is set to 'unclear' but the source does not provide any evidence to support even an unclear effect; the review is descriptive, not evaluative"
+    ]
+  },
+  {
+    "source_id": "39332508",
+    "title": "Retinal damage promotes mitochondrial transfer in the visual system of a mouse model of Leber hereditary optic neuropathy.",
+    "issues": [
+      "The extracted 'effect_class' is incorrectly labeled as 'neutral_or_no_difference' for a mechanistic finding (mitochondrial transfer) that is described as accelerated/enhanced in the source. This misclassification conflates a mechanistic observation with a therapeutic effect.",
+      "The outcome describes a mechanistic process (mitochondrial transfer) rather than a therapeutic benefit or clinical endpoint, which is not aligned with the 'effect_class' implying a therapeutic outcome.",
+      "The intervention is described as a 'mechanistic tool for mitochondrial tracking' in the extraction, but the source text does not frame it as an intervention with therapeutic intent; it is purely a mechanistic study.",
+      "The effect_class should reflect the mechanistic nature of the findings (e.g., 'mechanistic') rather than a therapeutic classification like 'neutral_or_no_difference'."
+    ]
+  },
+  {
+    "source_id": "39525159",
+    "title": "Leber Hereditary Optic Neuropathy With Significant Visual Recovery: An MT-ND6 Mutation in a Malay Patient.",
+    "issues": [
+      "Sample size n=1 was not found in source text",
+      "Extracted study_type 'case_series' is not supported by source text (source is a single case report).",
+      "Extracted n=1 is not explicitly stated in source text (source describes a single patient but does not quantify sample size).",
+      "Extracted effect_class 'unclear' is inconsistent with the source, which describes a specific outcome (spontaneous visual recovery) without an intervention or comparative analysis.",
+      "Extracted intervention 'null' is correct, but the outcome 'spontaneous visual recovery' is not an effect of an intervention, which is appropriate for this study type.",
+      "Deterministic guardrail issue: Sample size n=1 was not found in source text (source describes a single patient but does not state n=1).",
+      "The source does not provide evidence for efficacy or therapeutic benefit; it only reports an observed outcome in a single case."
+    ]
+  },
+  {
+    "source_id": "39365263",
+    "title": "Ganglion Cell Complex Thickness and Visual Function in Chronic Leber Hereditary Optic Neuropathy.",
+    "issues": [
+      "Sample size n=26 was not found in source text",
+      "Sample size n=26 is explicitly stated in the source text and matches the extracted record. The deterministic guardrail issue is incorrect.",
+      "The extracted record correctly classifies the study as observational and the effect_class as 'unclear' (no therapeutic benefit claimed).",
+      "The source_quote accurately reflects the correlation findings in the source text."
+    ]
+  },
+  {
+    "source_id": "38967874",
+    "title": "Assessment of objective visual function following idebenone administration in patients with leber hereditary optic neuropathy.",
+    "issues": [
+      "Sample size n=4 was not found in source text",
+      "Sample size n=4 is explicitly stated in the source text, so the deterministic guardrail issue is incorrect. However, the extracted record incorrectly classifies the study as 'case_series' when the source explicitly states it is a 'descriptive study'.",
+      "The extracted record does not include any effect or effect_class, despite the source describing heterogeneous outcomes (e.g., improvements, stability, worsening). The effect_class 'unclear' is not justified by the source, as the study does report specific observations.",
+      "The source does not support a therapeutic benefit or efficacy claim; it only describes observational changes without causal inference.",
+      "The extracted record does not reflect the heterogeneity of outcomes described in the source (e.g., one patient worsened despite improvement in visual fields).",
+      "The source does not provide sufficient evidence to classify the study as a 'case_series' (which typically implies a more structured analysis of multiple cases), as it is explicitly labeled as a 'descriptive study' with only four patients."
+    ]
+  },
+  {
+    "source_id": "33647261",
+    "title": "Brain functional MRI responses to blue light stimulation in Leber's hereditary optic neuropathy.",
+    "issues": [
+      "Sample size n=24 was not found in source text",
+      "Sample size n=24 is not explicitly stated in the source text; the source only mentions 'Twelve patients and twelve matched healthy controls (HC)' without aggregating the total.",
+      "The extracted record claims 'effect_class: unclear' but the source text describes specific observed differences (e.g., 'higher occipital activation', 'brain responses to the executive task were larger') which imply an effect, though not necessarily therapeutic or causal.",
+      "The intervention is described as 'blue light (480 nm) exposure under experimental fMRI paradigms' in the extracted record, but the source text frames this as a mechanistic exploration of mRGC function rather than a therapeutic intervention."
+    ]
+  },
+  {
+    "source_id": "NCT05293626",
+    "title": "Gene Therapy Clinical Trial for the Treatment of Leber's Hereditary Optic Neuropathy Associated With ND4 Mutations",
+    "issues": [
+      "source_quote is missing or not found verbatim in source text",
+      "source_quote is not verbatim in the source text (missing 'at different doses' at the end of the sentence)",
+      "extracted outcome is a list of primary outcomes, but the effect field is null and effect_class is 'unclear'—this is acceptable for a safety-focused trial without efficacy results, but the source_quote must match exactly",
+      "the source is a clinical trial registration without efficacy results, so any claim of therapeutic benefit (even if implied by 'effect_class') would be unsupported; current extraction correctly avoids this"
+    ]
+  },
+  {
+    "source_id": "NCT06891443",
+    "title": "Study to Evaluate Sepofarsen in Subjects With Leber Congenital Amaurosis (LCA) Type 10 (HYPERION)",
+    "issues": [
+      "source_quote is missing or not found verbatim in source text",
+      "source_quote is not verbatim in the source text (missing 'double-masked, randomized, placebo-controlled, paired-eye' and 'evaluate the efficacy, safety and tolerability' phrasing).",
+      "The extracted outcome describes a comparison between TEs and PCEs, but the source_quote only states the purpose of the study and primary outcome measure without explicitly confirming the comparative nature in the quote itself.",
+      "effect is null and effect_class is 'unclear' — this is acceptable for a trial without reported results, but the source_quote does not support any efficacy claim (which is correctly reflected)."
+    ]
+  },
+  {
+    "source_id": "NCT07406854",
+    "title": "A Phase 3, Multicenter, Randomized, Double-Masked, Sham-Controlled Clinical Trial for Leber's Hereditary Optic Neuropathy (LHON) Associated With ND4 Mutation",
+    "issues": [
+      "source_quote is missing or not found verbatim in source text",
+      "source_quote is not verbatim in the source text (missing 'in the NR02 treatment and the sham-injection' clause and minor phrasing differences)",
+      "The extracted record claims 'effect_class: unclear' but the source explicitly states the study is evaluating efficacy (not just safety), which is incompatible with an unclear effect classification for the primary outcome",
+      "The study_type is labeled 'RCT' but the source only specifies 'INTERVENTIONAL' without confirming randomization or masking details beyond 'double-masked' and 'sham-control' (which implies randomization but is not explicitly stated as RCT in the source)",
+      "The source_quote includes a claim about the primary outcome being evaluated in both NR082 and sham groups, but the extracted record does not reflect this nuance (it implies the outcome is only for NR082)."
+    ]
+  }
+]
