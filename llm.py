@@ -4,8 +4,22 @@ import json
 import re
 from typing import TypeVar, Type
 
+import os
+import random
+import time
+
 from litellm import completion
 from pydantic import BaseModel, ValidationError
+
+from config import (
+    LLM_TEMPERATURE,
+    LLM_MAX_TOKENS,
+    LLM_TIMEOUT,
+    LLM_KEY_MAX_ROUNDS,
+    LLM_KEY_MAX_SECONDS,
+    LLM_KEY_PAUSE_MIN,
+    LLM_KEY_PAUSE_MAX,
+)
 
 T = TypeVar("T", bound=BaseModel)
 
@@ -17,6 +31,46 @@ def _clean_json(text: str) -> str:
         text = re.sub(r"\s*```$", "", text)
     return text.strip()
 
+def _completion_with_key_rotation(*, model, messages):
+    provider = model.split("/", 1)[0].upper()
+    prefix = f"{provider}_"
+
+    keys = [
+        value
+        for name, value in sorted(os.environ.items())
+        if name.startswith(prefix) and "API_KEY" in name and value
+    ]
+
+    if not keys:
+        raise RuntimeError(f"No API keys found for {provider}")
+
+    started = time.monotonic()
+    last_error = None
+
+    for attempt in range(len(keys) * LLM_KEY_MAX_ROUNDS):
+        if time.monotonic() - started >= LLM_KEY_MAX_SECONDS:
+            break
+
+        try:
+            return completion(
+                model=model,
+                messages=messages,
+                api_key=keys[attempt % len(keys)],
+                temperature=LLM_TEMPERATURE,
+                max_tokens=LLM_MAX_TOKENS,
+                timeout=LLM_TIMEOUT,
+            )
+        except Exception as e:
+            last_error = e
+
+            time.sleep(
+                random.uniform(
+                    LLM_KEY_PAUSE_MIN,
+                    LLM_KEY_PAUSE_MAX,
+                )
+            )
+
+    raise last_error
 
 def call_structured_llm(
     *,
@@ -42,13 +96,12 @@ Rules:
     last_error: Exception | None = None
     repair_note = ""
     for _ in range(max_attempts):
-        response = completion(
+        response = _completion_with_key_rotation(
             model=model,
             messages=[
                 {"role": "system", "content": base_system + repair_note},
                 {"role": "user", "content": user_prompt},
             ],
-            temperature=0,
         )
         raw = response.choices[0].message.content or ""
         try:
