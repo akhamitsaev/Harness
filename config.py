@@ -35,3 +35,10 @@ BENCHMARK_MODEL = (
 
 NCBI_EMAIL = os.getenv("NCBI_EMAIL", "")
 NCBI_TOOL = os.getenv("NCBI_TOOL", "mito-harness")
+
+LLM_KEY_MAX_ROUNDS = int(os.getenv("LLM_KEY_MAX_ROUNDS", "2"))
+LLM_KEY_MAX_SECONDS = float(os.getenv("LLM_KEY_MAX_SECONDS", "180"))
+
+LLM_KEY_PAUSE_MIN = float(os.getenv("LLM_KEY_PAUSE_MIN", "0.5"))
+LLM_KEY_PAUSE_MAX = float(os.getenv("LLM_KEY_PAUSE_MAX", "3.0"))
+
