@@ -42,3 +42,7 @@ LLM_KEY_MAX_SECONDS = float(os.getenv("LLM_KEY_MAX_SECONDS", "180"))
 LLM_KEY_PAUSE_MIN = float(os.getenv("LLM_KEY_PAUSE_MIN", "0.5"))
 LLM_KEY_PAUSE_MAX = float(os.getenv("LLM_KEY_PAUSE_MAX", "3.0"))
 
+LLM_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0"))
+LLM_MAX_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "4096"))
+LLM_TIMEOUT = float(os.getenv("LLM_TIMEOUT", "60"))
+
