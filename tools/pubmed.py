@@ -8,6 +8,8 @@ import httpx
 from config import NCBI_EMAIL, NCBI_TOOL
 from schemas import EvidenceTrack, SourceDocument
 
+import time
+
 BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 
@@ -45,6 +47,8 @@ def search_pubmed(
             },
         )
         search.raise_for_status()
+        time.sleep(0.5)
+        
         ids = search.json().get("esearchresult", {}).get("idlist", [])
         if not ids:
             return []
@@ -59,6 +63,7 @@ def search_pubmed(
             },
         )
         fetched.raise_for_status()
+        time.sleep(0.5)
 
     root = ET.fromstring(fetched.text)
     docs: list[SourceDocument] = []
